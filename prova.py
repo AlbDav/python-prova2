@@ -17,7 +17,7 @@ class HelloRequestHandler(BaseHTTPRequestHandler):
         self.wfile.write(response_text.encode('utf-8'))
 
 
-server_address = ('', 8000)
+server_address = ('', 8080)
 httpd = HTTPServer(server_address, HelloRequestHandler)
 httpd.serve_forever()
 
